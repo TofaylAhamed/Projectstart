@@ -14,6 +14,14 @@ ul, ol{
     width: 1320px;
     margin: 0 auto; 
 }
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+.row{
+    display: flex;
+}
 /* All common css End */
 /* Header part start */
 #headerpart{
@@ -97,6 +105,10 @@ ul, ol{
 /* BannerPart part End */
 
 /*Donation Part Start */
+#DonationPart .container{
+    width: 1320px;
+    margin: 0 auto;
+}
 #DonationPart{
     padding-bottom: 120px;
 }
@@ -113,12 +125,68 @@ ul, ol{
     border-radius: 0 0 20px 20px;
 }
 .DonationBox{
-    width: 74%;
-    background: #ffa415;
+    width: 76%;
+    background: white;
     border-radius: 58px;
     padding: 40px 35px;
     position: absolute;
-    top: -35px;
+    top: -58px;
     left: 0;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    transition: .9s;
+}
+.DonationBox i{
+    color: #ffa415;
+    font-size: 55px;
+    transition: .9s;
+}
+.text h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 10px;
+}
+.boxNum{
+    width: 5px;
+    padding: 30px;
+    background: white;
+    border-radius: 50px;
+    position: absolute;
+    left: 38%;
+    top: 75%;
+    transition: .9s;
+}
+.boxNam span{
+    color: #ffa415;
+    font-size: 50px;
+}
+.text p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #636363;
+}
+.DonationItem:hover .DonationBox{
+    background: #ffa415;
+}
+.DonationItem:hover .DonationBox i{
+    color: #fff;
+}
+.DonationItem:hover .DonationBox .boxNum{
+    color: #ffa415;
 }
 /*Donation Part End */
+/*About Part start */
+#Aboutpart{
+    padding: 100px 0;
+}
+.phLeft{
+    margin-right: 30px;
+}
+.phLeft img{
+    border-radius: 20px;
+}
+/*About Part End */
